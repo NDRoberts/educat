@@ -1,11 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an educational SQLite3-based web application developed for CS3710 - Web Application Development, Fall 2020, with Dr. Steve Beaty.
 
-Things you may want to cover:
+Things I should put in here:
 
-* Ruby version
+* Ruby version: 2.6.6
 
 * System dependencies
 
