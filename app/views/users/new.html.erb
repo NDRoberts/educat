@@ -1,32 +1,5 @@
-<%= form_with scope: :user, url: users_path, local: true do |form| %>
+<h1>New User</h1>
 
-    <% if @user.errors.any? %>
-        <div id="error_explanation">
-            <h2>
-                <%= pluralize(@user.errors.count, "error") %> 
-                prevented this user from being saved:
-            </h2>
-            <ul>
-                <% @user.errors.full_messages.each do |msg| %>
-                    <li><%= msg %></li>
-                <% end %>
-            </ul>
-        </div>
-    <% end %>
-
-    <p>
-        <%= form.label :name %><br>
-        <%= form.text_area :name %>
-    </p>
-
-    <p>
-        <%= form.label :uid %><br>
-        <%= form.text_area :uid %>
-    </p>
-    
-    <p>
-        <%= form.submit %>
-    </p>
-<% end %>
+<%= render 'form' %>
 
 <%= link_to 'Back', users_path %>
